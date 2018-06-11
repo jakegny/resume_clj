@@ -1,0 +1,1 @@
+{:output-wrapper true, :externs ["closure-js/externs"], :libs ["closure-js/libs"], :output-to "resources/public/static/js/app.js", :output-dir "resources/public/static/js", :asset-path "static/", :source-map "resources/public/static/js/app.js.map", :optimizations :advanced, :pretty-print false}
