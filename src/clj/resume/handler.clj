@@ -19,9 +19,9 @@
    [:meta {:name "viewport"
            :content "width=device-width, initial-scale=1"}]
    (include-css (if (env :dev) "/css/site.css" "/css/site.min.css"))
-   [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css?family=Josefin+Sans:bold|Merriweather"}]
-   [:link {:rel "stylesheet" :href "https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"}]
-   [:link {:rel "stylesheet" :href "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}]])
+   [:link {:rel "stylesheet" :target "_blank" :href "https://fonts.googleapis.com/css?family=Josefin+Sans:bold|Merriweather"}]
+   [:link {:rel "stylesheet" :target "_blank" :href "https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"}]
+   [:link {:rel "stylesheet" :target "_blank" :href "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}]])
 
 (defn loading-page []
   (html5

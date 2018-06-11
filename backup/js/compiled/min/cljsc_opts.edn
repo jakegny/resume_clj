@@ -1,1 +1,0 @@
-{:output-wrapper true, :externs ["closure-js/externs"], :libs ["closure-js/libs"], :output-to "resources/public/js/compiled/app.js", :main resume.core, :optimizations :advanced, :source-map "resources/public/js/compiled/resume.js.map", :output-dir "resources/public/js/compiled/min", :pretty-print false}

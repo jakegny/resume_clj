@@ -11,10 +11,10 @@
     [:span {:class "contact-item" :href "mailto:jakegny@gmail.com"} "jakegny@gmail.com"]]
    [:div
     [:span {:class "fa fa-github contact-icon github"}]
-    [:span {:class "contact-item" :href "https://github.com/jakegny"} "https://github.com/jakegny"]]
+    [:span {:class "contact-item" :target "_blank" :href "https://github.com/jakegny"} "https://github.com/jakegny"]]
    [:div
     [:span {:class "fa fa-twitter contact-icon twitter"}]
-    [:span {:class "contact-item" :href "https://twitter.com/jakegny"} "https://twitter.com/jakegny"]]
+    [:span {:class "contact-item" :target "_blank" :href "https://twitter.com/jakegny"} "https://twitter.com/jakegny"]]
    [:div
     [:span {:class "fa fa-linkedin contact-icon linkedin"}]
-    [:span {:class "contact-item" :href "https://www.linkedin.com/in/jakenylund/"} "https://www.linkedin.com/in/jakenylund/"]]])
+    [:span {:class "contact-item" :target "_blank" :href "https://www.linkedin.com/in/jakenylund/"} "https://www.linkedin.com/in/jakenylund/"]]])

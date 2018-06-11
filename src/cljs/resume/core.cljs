@@ -8,7 +8,8 @@
               [resume.views.experience :as experience]
               [resume.views.skills :as skills]
               [resume.views.projects :as projects]
-              [resume.views.contact :as contact]))
+              [resume.views.contact :as contact]
+              [resume.views.certifications :as certifications]))
 ;; -------------------------
 ;; React Bootstrap Definitions
 (def Grid (reagent/adapt-react-class (aget js/ReactBootstrap "Grid")))
@@ -16,7 +17,6 @@
 (def Row (reagent/adapt-react-class (aget js/ReactBootstrap "Row")))
 
 (def Col (reagent/adapt-react-class (aget js/ReactBootstrap "Col")))
-
 
 ;; -------------------------
 ;; Views
@@ -33,17 +33,18 @@
      [Col {:xs 12 :md 6}
       [about/component]
       [skills/component]
+      [certifications/component]
       [projects/component]
       [contact/component]]]]])
 
 
 ; (defn home-page []
 ;   [:div [:h2 "Welcome to resume"]
-;    [:div [:a {:href "/about"} "go to about page"]]])
+;    [:div [:a {:target "_blank" :href "/about"} "go to about page"]]])
 ;
 ; (defn about-page []
 ;   [:div [:h2 "About resume"]
-;    [:div [:a {:href "/"} "go to the home page"]]])
+;    [:div [:a {:target "_blank" :href "/"} "go to the home page"]]])
 
 ;; -------------------------
 ;; Routes

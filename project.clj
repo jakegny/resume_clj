@@ -39,11 +39,11 @@
    [:cljsbuild :builds :min :compiler :output-to]]
 
   :source-paths ["src/clj" "src/cljc"]
-  :resource-paths ["resources" "target/cljsbuild"]
+  :resource-paths ["resources" "resources/"]
 
   :minify-assets
   {:assets
-   {"resources/public/css/site.min.css" "resources/public/css/site.css"}}
+   {"resources/public/static/css/site.min.css" "resources/public/static/css/site.css"}}
 
   :cljsbuild
   {:builds {:min
@@ -60,9 +60,9 @@
              :figwheel {:on-jsload "resume.core/mount-root"}
              :compiler
              {:main "resume.dev"
-              :asset-path "/js/out"
-              :output-to "target/cljsbuild/public/js/app.js"
-              :output-dir "target/cljsbuild/public/js/out"
+              :asset-path "static/js/out"
+              :output-to "resources/public/static/js/app.js"
+              :output-dir "resources/public/static/js/out"
               :source-map true
               :optimizations :none
               :pretty-print  true}}}}
@@ -78,7 +78,7 @@
    :nrepl-port 7002
    :nrepl-middleware ["cemerick.piggieback/wrap-cljs-repl"]
 
-   :css-dirs ["resources/public/css"]
+   :css-dirs ["resources/public/static/css"]
    :ring-handler resume.handler/app}
 
 
